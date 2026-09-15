@@ -1,0 +1,72 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    user-select: none;
+    background-color: #1e272e;
+}
+
+#game-container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* الواجهة العلوية */
+#hud {
+    position: absolute; top: 15px; display: flex; gap: 20px; align-items: center;
+    background: rgba(255, 255, 255, 0.9); padding: 15px 25px; border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.8); z-index: 20; flex-wrap: wrap; justify-content: center;
+    border-bottom: 4px solid #6c5ce7;
+}
+
+.control-box { display: flex; gap: 10px; font-weight: bold; align-items: center; color: #2d3436;}
+select { padding: 5px; border-radius: 5px; font-size: 14px; outline: none; border: 2px solid #b2bec3;}
+
+.locks-status { font-weight: bold; font-size: 18px; color: #d63031; border-right: 2px solid #ccc; padding-right: 15px; }
+
+button {
+    padding: 10px 20px; cursor: pointer; background-color: #6c5ce7;
+    color: white; border: none; border-radius: 8px; font-weight: bold; font-size: 16px;
+    transition: 0.2s; box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+}
+button:hover:not(:disabled) { background-color: #a29bfe; transform: scale(1.05); }
+
+/* مشهد القلعة والأبواب 3D */
+#castle-scene {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 75vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100"><rect width="100" height="100" fill="%232d3436"/><rect width="45" height="45" fill="%23636e72" stroke="%232d3436" stroke-width="2"/></svg>');
+}
+
+#door-frame {
+    width: 350px;
+    height: 450px;
+    background: #000;
+    position: relative;
+    display: flex;
+    perspective: 1500px; /* لعمل البعد الثالث لفتح الباب */
+    border: 15px solid #4a69bd;
+    border-bottom: none;
+    border-radius: 150px 150px 0 0;
+    box-shadow: inset 0 0 50px rgba(0,0,0,0.8);
+}
+
+#next-room-bg {
+    position: absolute; width: 100%; height: 100%;
+    background: radial-gradient(circle, #f1c40f, #e67e22);
+    display: flex; justify-content: center; align-items: center;
+    font-size: 30px; font-weight: bold; color: white; text-shadow: 0 0 10px #fff;
+    opacity: 0; transition: opacity 1s; border-radius: 135px 135px 0 0;
+}
+
+.door {
