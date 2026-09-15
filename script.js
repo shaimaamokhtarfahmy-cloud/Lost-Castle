@@ -7,6 +7,45 @@
 // ⬇️ منطقة المنهج (Syllabus) المحدثة ⬇️
 // ==========================================
 
+const syllabus {
+    chapter: "Grammar: Auxiliary Verbs",
+    branches: [
+        {
+            title: "1. Verb to Be",
+            lesson: "📜 Grammar Rules (Be):\n• Present: I am | He/She/It is | You/We/They are.\n• Past: I/He/She/It was | You/We/They were.",
+            questions: [
+                { q: "She ______ a talented doctor.", options: ["is", "are", "am"], a: "is" },
+                { q: "They ______ playing football right now.", options: ["am", "are", "is"], a: "are" },
+                { q: "Yesterday, I ______ very tired after work.", options: ["was", "were", "are"], a: "was" },
+                { q: "We ______ late for the movie last night.", options: ["was", "were", "is"], a: "were" }
+            ]
+        },
+        {
+            title: "2. Verb to Do",
+            lesson: "📜 Grammar Rules (Do):\n• Present: I/You/We/They do | He/She/It does.\n• Past: Did (for all pronouns).",
+            questions: [
+                { q: "______ he like chocolate ice cream?", options: ["Do", "Does", "Did"], a: "Does" },
+                { q: "They ______ work on Sundays.", options: ["do not", "does not", "did not"], a: "do not" },
+                { q: "Where ______ you go last weekend?", options: ["does", "did", "do"], a: "did" },
+                { q: "She ______ her homework every afternoon.", options: ["do", "does", "did"], a: "does" }
+            ]
+        },
+        {
+            title: "3. Verb to Have",
+            lesson: "📜 Grammar Rules (Have):\n• Present: I/You/We/They have | He/She/It has.\n• Past: Had (for all pronouns).",
+            questions: [
+                { q: "Sarah ______ two brothers.", options: ["has", "have", "had"], a: "has" },
+                { q: "We ______ a meeting at 10:00 AM today.", options: ["has", "have", "had"], a: "have" },
+                { q: "They ______ a great time at the party last night.", options: ["has", "have", "had"], a: "had" },
+                { q: "Mark ______ a dog when he was a child.", options: ["has", "have", "had"], a: "had" }
+            ]
+        }
+    ]
+}
+كود مصفوفة syllabus الكامل متضمناً الفصل الجديد:
+JavaScript
+
+
 const syllabus = [
     {
         chapter: "أسرار التاريخ",
@@ -37,26 +76,10 @@ const syllabus = [
                 title: "1. Definitions",
                 lesson: "📜 Map Rules:\n• Mixture: Physical combination of two or more substances that do not combine chemically.\n• Solution: Blended so completely that it looks the same everywhere.\n• Colloid: Particles are scattered without settling out.\n• Suspension: Particles settle out over time showing the parts.",
                 questions: [
-                    { 
-                        q: "What is a physical combination of two or more substances that do not combine chemically?", 
-                        options: ["Solution", "Suspension", "Mixture"], 
-                        a: "Mixture" 
-                    },
-                    { 
-                        q: "A mixture in which particles are scattered without settling out is a:", 
-                        options: ["Colloid", "Solution", "Suspension"], 
-                        a: "Colloid" 
-                    },
-                    { 
-                        q: "A heterogeneous mixture that settles out over time is a:", 
-                        options: ["Solution", "Suspension", "Colloid"], 
-                        a: "Suspension" 
-                    },
-                    { 
-                        q: "A mixture blended so completely that it looks the same everywhere is a:", 
-                        options: ["Mixture", "Colloid", "Solution"], 
-                        a: "Solution" 
-                    }
+                    { q: "What is a physical combination of two or more substances that do not combine chemically?", options: ["Solution", "Suspension", "Mixture"], a: "Mixture" },
+                    { q: "A mixture in which particles are scattered without settling out is a:", options: ["Colloid", "Solution", "Suspension"], a: "Colloid" },
+                    { q: "A heterogeneous mixture that settles out over time is a:", options: ["Solution", "Suspension", "Colloid"], a: "Suspension" },
+                    { q: "A mixture blended so completely that it looks the same everywhere is a:", options: ["Mixture", "Colloid", "Solution"], a: "Solution" }
                 ]
             },
             {
@@ -71,185 +94,41 @@ const syllabus = [
                 ]
             }
         ]
+    },
+    {
+        chapter: "Grammar: Auxiliary Verbs",
+        branches: [
+            {
+                title: "1. Verb to Be",
+                lesson: "📜 Grammar Rules (Be):\n• Present: I am | He/She/It is | You/We/They are.\n• Past: I/He/She/It was | You/We/They were.",
+                questions: [
+                    { q: "She ______ a talented doctor.", options: ["is", "are", "am"], a: "is" },
+                    { q: "They ______ playing football right now.", options: ["am", "are", "is"], a: "are" },
+                    { q: "Yesterday, I ______ very tired after work.", options: ["was", "were", "are"], a: "was" },
+                    { q: "We ______ late for the movie last night.", options: ["was", "were", "is"], a: "were" }
+                ]
+            },
+            {
+                title: "2. Verb to Do",
+                lesson: "📜 Grammar Rules (Do):\n• Present: I/You/We/They do | He/She/It does.\n• Past: Did (for all pronouns).",
+                questions: [
+                    { q: "______ he like chocolate ice cream?", options: ["Do", "Does", "Did"], a: "Does" },
+                    { q: "They ______ work on Sundays.", options: ["do not", "does not", "did not"], a: "do not" },
+                    { q: "Where ______ you go last weekend?", options: ["does", "did", "do"], a: "did" },
+                    { q: "She ______ her homework every afternoon.", options: ["do", "does", "did"], a: "does" }
+                ]
+            },
+            {
+                title: "3. Verb to Have",
+                lesson: "📜 Grammar Rules (Have):\n• Present: I/You/We/They have | He/She/It has.\n• Past: Had (for all pronouns).",
+                questions: [
+                    { q: "Sarah ______ two brothers.", options: ["has", "have", "had"], a: "has" },
+                    { q: "We ______ a meeting at 10:00 AM today.", options: ["has", "have", "had"], a: "have" },
+                    { q: "They ______ a great time at the party last night.", options: ["has", "have", "had"], a: "had" },
+                    { q: "Mark ______ a dog when he was a child.", options: ["has", "have", "had"], a: "had" }
+                ]
+            }
+        ]
     }
 ];
-// ==========================================
-// نهاية منطقة المنهج
-// ==========================================
-
-let cIdx = 0; 
-let bIdx = 0; 
-let qIdx = 0; 
-let needsLesson = true; 
-let totalLocks = 0;
-let locksBroken = 0;
-
-window.onload = () => {
-    populateIndex();
-    setupDoorsAndLocks();
-};
-
-function populateIndex() {
-    const select = document.getElementById('lesson-index');
-    select.innerHTML = '';
-    syllabus.forEach((chap, cIndex) => {
-        let optGroup = document.createElement('optgroup');
-        optGroup.label = chap.chapter;
-        chap.branches.forEach((branch, bIndex) => {
-            let opt = document.createElement('option');
-            opt.value = `${cIndex}-${bIndex}`;
-            opt.innerText = branch.title;
-            optGroup.appendChild(opt);
-        });
-        select.appendChild(optGroup);
-    });
-}
-
-// تجهيز الباب والأقفال للغرفة الجديدة
-function setupDoorsAndLocks() {
-    // إغلاق الأبواب
-    document.getElementById('left-door').classList.remove('open-left');
-    document.getElementById('right-door').classList.remove('open-right');
-    document.getElementById('next-room-bg').style.opacity = '0';
-    
-    // إنشاء الأقفال بناءً على عدد الأسئلة
-    totalLocks = syllabus[cIdx].branches[bIdx].questions.length;
-    locksBroken = 0;
-    document.getElementById('locks-left').innerText = totalLocks;
-    
-    const locksContainer = document.getElementById('locks-container');
-    locksContainer.innerHTML = '';
-    for (let i = 0; i < totalLocks; i++) {
-        const lock = document.createElement('div');
-        lock.className = 'padlock';
-        lock.id = `lock-${i}`;
-        lock.innerText = '🔒';
-        locksContainer.appendChild(lock);
-    }
-}
-
-function jumpToLesson() {
-    const val = document.getElementById('lesson-index').value;
-    const [c, b] = val.split('-');
-    cIdx = parseInt(c);
-    bIdx = parseInt(b);
-    qIdx = 0;
-    needsLesson = true;
-    setupDoorsAndLocks();
-    showFeedback("تم دخول غرفة جديدة! 🏰");
-}
-
-function drawQuestion() {
-    if (cIdx >= syllabus.length) {
-        alert("🏆 مبرووووك! لقد هربت من القلعة بنجاح بفضل ذكائك!");
-        return;
-    }
-    document.getElementById('lesson-index').value = `${cIdx}-${bIdx}`;
-    
-    if (needsLesson) showLessonUI(false);
-    else showQuestion();
-}
-
-function showLessonUI(isRetry) {
-    const branchData = syllabus[cIdx].branches[bIdx];
-    document.getElementById('lesson-title').innerText = branchData.title;
-    
-    let textToShow = branchData.lesson;
-    if (isRetry) {
-        document.getElementById('lesson-title').innerText = "👻 ظهر شبح القلعة!";
-        textToShow = "إجابة خاطئة! الشبح يطلب منك قراءة هذا اللغز لتتمكن من المحاولة:\n\n" + textToShow;
-    }
-    
-    document.getElementById('lesson-text').innerText = textToShow;
-    document.getElementById('lesson-section').classList.remove('hidden');
-    document.getElementById('question-section').classList.add('hidden');
-    document.getElementById('quiz-modal').classList.remove('hidden');
-}
-
-function showQuestion() {
-    const chapterData = syllabus[cIdx];
-    const branchData = chapterData.branches[bIdx];
-    const questionData = branchData.questions[qIdx];
-    
-    document.getElementById('chapter-branch-label').innerText = `${chapterData.chapter} - ${branchData.title}`;
-    document.getElementById('question-counter').innerText = `البحث عن المفتاح ${qIdx + 1} من ${totalLocks}`;
-    document.getElementById('question-text').innerText = questionData.q;
-    
-    const optionsDiv = document.getElementById('options');
-    optionsDiv.innerHTML = '';
-    
-    questionData.options.forEach(opt => {
-        const btn = document.createElement('button');
-        btn.className = 'opt-btn';
-        btn.innerText = opt;
-        btn.onclick = () => checkAnswer(opt, questionData.a);
-        optionsDiv.appendChild(btn);
-    });
-    
-    document.getElementById('lesson-section').classList.add('hidden');
-    document.getElementById('question-section').classList.remove('hidden');
-    document.getElementById('quiz-modal').classList.remove('hidden');
-}
-
-function checkAnswer(selected, correct) {
-    if (selected === correct) {
-        // إجابة صحيحة: كسر القفل
-        document.getElementById('quiz-modal').classList.add('hidden');
-        showFeedback("🗝️ تم كسر القفل!");
-        
-        const currentLock = document.getElementById(`lock-${locksBroken}`);
-        currentLock.classList.add('broken-lock');
-        
-        locksBroken++;
-        document.getElementById('locks-left').innerText = totalLocks - locksBroken;
-        
-        // التحقق من كسر كل الأقفال
-        if (locksBroken >= totalLocks) {
-            setTimeout(() => {
-                showFeedback("🌟 فُتح الباب!");
-                
-                // أنيميشن فتح الباب 3D
-                document.getElementById('left-door').classList.add('open-left');
-                document.getElementById('right-door').classList.add('open-right');
-                document.getElementById('next-room-bg').style.opacity = '1';
-                document.getElementById('locks-container').innerHTML = ''; // إخفاء الأقفال المكسورة
-                
-                // الانتقال للدرس التالي بعد ثوانٍ قليلة من الاستمتاع بفتح الباب
-                setTimeout(() => {
-                    qIdx = 0;
-                    bIdx++;
-                    needsLesson = true; 
-                    if (bIdx >= syllabus[cIdx].branches.length) {
-                        bIdx = 0;
-                        cIdx++;
-                    }
-                    if(cIdx < syllabus.length) {
-                        setupDoorsAndLocks(); // تجهيز الغرفة الجديدة
-                        showFeedback("دخلت الغرفة التالية! 🚪");
-                    }
-                }, 2500);
-
-            }, 1000);
-        } else {
-            // لا يزال هناك أسئلة
-            qIdx++;
-            needsLesson = false;
-        }
-    } else {
-        // إجابة خاطئة
-        needsLesson = true;
-        showLessonUI(true);
-    }
-}
-
-function showFeedback(text) {
-    const feedback = document.getElementById('feedback-message');
-    feedback.innerText = text;
-    feedback.classList.remove('hidden');
-    feedback.style.animation = 'none';
-    feedback.offsetHeight; 
-    feedback.style.animation = 'popIn 1.5s ease-out forwards';
-}
-
-
 
