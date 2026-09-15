@@ -7,7 +7,7 @@
 // ⬇️ منطقة المنهج (Syllabus) المحدثة ⬇️
 // ==========================================
 
-const syllabus {
+{
     chapter: "Grammar: Auxiliary Verbs",
     branches: [
         {
@@ -131,4 +131,3 @@ const syllabus = [
         ]
     }
 ];
-
