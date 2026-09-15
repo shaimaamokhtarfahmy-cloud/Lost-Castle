@@ -3,6 +3,10 @@
 // عدد الأقفال على الباب يتم حسابه تلقائياً بناءً على عدد الأسئلة في الدرس.
 // ==========================================
 
+// ==========================================
+// ⬇️ منطقة المنهج (Syllabus) المحدثة ⬇️
+// ==========================================
+
 const syllabus = [
     {
         chapter: "أسرار التاريخ",
@@ -25,10 +29,50 @@ const syllabus = [
                 ]
             }
         ]
+    },
+    {
+        chapter: "Science: Mixtures and Solutions",
+        branches: [
+            {
+                title: "1. Definitions",
+                lesson: "📜 Map Rules:\n• Mixture: Physical combination of two or more substances that do not combine chemically.\n• Solution: Blended so completely that it looks the same everywhere.\n• Colloid: Particles are scattered without settling out.\n• Suspension: Particles settle out over time showing the parts.",
+                questions: [
+                    { 
+                        q: "What is a physical combination of two or more substances that do not combine chemically?", 
+                        options: ["Solution", "Suspension", "Mixture"], 
+                        a: "Mixture" 
+                    },
+                    { 
+                        q: "A mixture in which particles are scattered without settling out is a:", 
+                        options: ["Colloid", "Solution", "Suspension"], 
+                        a: "Colloid" 
+                    },
+                    { 
+                        q: "A heterogeneous mixture that settles out over time is a:", 
+                        options: ["Solution", "Suspension", "Colloid"], 
+                        a: "Suspension" 
+                    },
+                    { 
+                        q: "A mixture blended so completely that it looks the same everywhere is a:", 
+                        options: ["Mixture", "Colloid", "Solution"], 
+                        a: "Solution" 
+                    }
+                ]
+            },
+            {
+                title: "2. Identifying Types of Mixtures",
+                lesson: "📜 Examples Guide:\n• Solutions: Tap water, Sugar water, Carbonated beverage.\n• Colloids: Foam, Aerosol, Whipped cream, Milk, Fog, Airborne dust.\n• Suspensions: Oil and water, Muddy water.",
+                questions: [
+                    { q: "What type of mixture is 'Tap water'?", options: ["Solution", "Suspension", "Colloid"], a: "Solution" },
+                    { q: "What type of mixture is 'Milk'?", options: ["Solution", "Suspension", "Colloid"], a: "Colloid" },
+                    { q: "What type of mixture is 'Oil and water'?", options: ["Solution", "Suspension", "Colloid"], a: "Suspension" },
+                    { q: "What type of mixture is 'Fog'?", options: ["Solution", "Suspension", "Colloid"], a: "Colloid" },
+                    { q: "What type of mixture is 'Muddy water'?", options: ["Solution", "Suspension", "Colloid"], a: "Suspension" }
+                ]
+            }
+        ]
     }
-    // يمكنك إضافة المزيد هنا...
 ];
-
 // ==========================================
 // نهاية منطقة المنهج
 // ==========================================
